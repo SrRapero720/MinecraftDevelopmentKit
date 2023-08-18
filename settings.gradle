@@ -1,10 +1,16 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
         maven {
             name = 'MinecraftForge'
             url = 'https://maven.minecraftforge.net/'
         }
+
+    }
+
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 

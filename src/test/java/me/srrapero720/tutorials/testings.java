@@ -1,2 +1,5 @@
-package me.examplemod;public class testings {
+package me.srrapero720.tutorials;
+
+public class testings {
+
 }

@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.srrapero720.example_mod.mixin",
+  "package": "me.authorname.examplemod.mixins.impl",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "examplemod.refmap.json",
+  "refmap": "example_mod.refmap.json",
   "mixins": [
   ],
   "client": [

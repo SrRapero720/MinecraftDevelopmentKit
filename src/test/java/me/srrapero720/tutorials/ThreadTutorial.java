@@ -1,2 +1,4 @@
-package me.examplemod;public class ThreadTutorials {
+package me.srrapero720.tutorials;
+
+public class ThreadTutorial {
 }

@@ -1,2 +1,4 @@
-package me.authorname.examplemod.mixins;public class NetworkExample {
+package me.authorname.examplemod;
+
+public class NetworkExample {
 }
