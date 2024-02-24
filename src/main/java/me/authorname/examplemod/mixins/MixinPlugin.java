@@ -48,11 +48,11 @@ public class MixinPlugin implements IMixinConfigPlugin {
     @Override
     public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
         // ALWAYS KEEP THIS, IS HELPFULLY FOR OTHER DEVELOPERS IN CASE YOUR MOD MODIFIES A LOT MINECRAFT BEHAVIOR
-        LOGGER.info("Applying mixin '{}' to target class {}", mixinClassName, targetClassName);
+        LOGGER.debug(IT, "Applying mixin '{}' to target class {}", mixinClassName, targetClassName);
     }
 
     @Override
     public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
-        LOGGER.info("Mixin '{}' applied successfully", mixinClassName);
+        LOGGER.debug(IT, "Mixin '{}' applied successfully", mixinClassName);
     }
 }
