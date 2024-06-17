@@ -13,12 +13,12 @@ java {
 
 base {
     archivesName = modid
-    version = "mc${mcversion}-v${version}"
+    version = "mc${minecraftversion}-v${version}"
     sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
 }
 
 minecraft {
-    mappings channel: mappingsch, version: mappings_version
+    mappings channel: mappings, version: mappingsversion
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     copyIdeResources = true
 
@@ -96,7 +96,7 @@ minecraft.runs.all {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${mcversion}-${fgversion}"
+    minecraft "net.minecraftforge:forge:${minecraftversion}-${forgeversion}"
     annotationProcessor "net.fabricmc:sponge-mixin:${fabric_mixin_version}+mixin.${mixin_version}"
 
     // JARJAR MIXIN EXTRA
@@ -108,7 +108,7 @@ dependencies {
     // UTILITY FOR FAST LOADING AND IN-DEV COMPAT RESOLUTIONS
     runtimeOnly fg.deobf("curse.maven:jei-238222:${jeiversion}")
     runtimeOnly fg.deobf("curse.maven:oculus-581495:${oculusversion}")
-    runtimeOnly fg.deobf("org.embeddedt:embeddium-${mcversion}:${embeddiumversion}")
+    runtimeOnly fg.deobf("org.embeddedt:embeddium-${minecraftversion}:${embeddiumversion}")
     runtimeOnly fg.deobf("curse.maven:worldedit-225608:${worldeditversion}")
     runtimeOnly fg.deobf("curse.maven:ferritecore-429235:${ferritecoreversion}")
     runtimeOnly fg.deobf("curse.maven:fastload-630620:${fastloadversion}")
