@@ -14,11 +14,11 @@ issueTrackerURL="https://github.com/${github}/issues" #optional
 
 [[mods]] #mandatory
    # The modid of the mod
-   modId="${id}" #mandatory
+   modId="${modid}" #mandatory
    # The version number of the mod
-   version="${version}" #mandatory
+   version="${modversion}" #mandatory
    # A display name for the mod
-   displayName="${name}" #mandatory
+   displayName="${modname}" #mandatory
    # A URL for the "homepage" for this mod, displayed in the mod UI
    #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
    # Option to change if mod requires the exact-same version on the server side (MATCH_VERSION),
@@ -28,11 +28,11 @@ issueTrackerURL="https://github.com/${github}/issues" #optional
    # A file name (in the root of the mod JAR) containing a logo for display
    logoFile="pack.png" #optional
    # A text field displayed in the mod UI
-   credits="${credits}" #optional
+   credits="${modcredits}" #optional
    # A text field displayed in the mod UI
-   authors="${authors}" #optional
+   authors="${modauthors}" #optional
    # The description text for the mod (multi line!) (#mandatory)
-   description='''${description}'''
+   description='''${moddesc}'''
    # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.${modid}]] #optional
    # the modid of the dependency
